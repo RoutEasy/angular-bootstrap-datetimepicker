@@ -262,7 +262,7 @@
           'nextView': configuration.minView === 'hour' ? 'setTime' : 'minute',
           'previousViewDate': new DateObject({
             utcDateValue: previousViewDate.valueOf(),
-            display: selectedDate.format('ll')
+            display: 'Selecione uma hora'
           }),
           'leftDate': new DateObject({utcDateValue: moment.utc(selectedDate).subtract(1, 'days').valueOf()}),
           'rightDate': new DateObject({utcDateValue: moment.utc(selectedDate).add(1, 'days').valueOf()}),
@@ -298,7 +298,7 @@
           'nextView': 'setTime',
           'previousViewDate': new DateObject({
             utcDateValue: previousViewDate.valueOf(),
-            display: selectedDate.format('lll')
+            display: 'Selecione hora e minutos'
           }),
           'leftDate': new DateObject({utcDateValue: moment.utc(selectedDate).subtract(1, 'hours').valueOf()}),
           'rightDate': new DateObject({utcDateValue: moment.utc(selectedDate).add(1, 'hours').valueOf()}),
